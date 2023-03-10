@@ -1,0 +1,17 @@
+@import '../../styles/settings.scss';
+
+.columnForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  input {
+    min-width: 200px;
+    min-height: 40px;
+    background: $color-light;
+    border: 1px solid lighten($color-dark, 60%);
+    margin: 0 12px;
+    font-family: $font-text;
+    border-radius: $radius;
+  }
+}
