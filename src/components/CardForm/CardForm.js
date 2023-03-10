@@ -8,6 +8,8 @@ import { useDispatch } from 'react-redux';
 
 const CardForm = (props) => {
 const {columnId} = props;
+
+
 const [title, setTitle] = useState('');
   const dispatch = useDispatch();
 

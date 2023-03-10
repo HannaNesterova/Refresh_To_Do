@@ -8,6 +8,8 @@ const Column = (props) => {
     (card) => card.columnId === props.id
   );
 
+
+
   return (
     <article className={styles.column}>
       <h2 className={styles.title}>

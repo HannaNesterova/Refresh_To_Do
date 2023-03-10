@@ -2,6 +2,8 @@ import { createStore } from 'redux';
 import initialState from './initialState';
 import shortid from 'shortid';
 
+const searchString = "";
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_COLUMN':
@@ -16,8 +18,11 @@ const reducer = (state = initialState, action) => {
         };
     default:
       return state;
+      case 'UPDATE_SEARCHSTRING':
+      return { ...state, searchString: action.payload };
   }
 };
+
 
 const store = createStore(
   reducer,
