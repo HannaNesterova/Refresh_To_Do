@@ -2,7 +2,10 @@ import { createStore } from 'redux';
 import initialState from './initialState';
 import shortid from 'shortid';
 
-const searchString = " ";
+ const searchString = {
+   String: '',
+ }
+
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
