@@ -1,7 +1,7 @@
 import styles from './SearchForm.module.scss';
 import TextInput from '../TextInput/TextInput';
 import Button from '../Button/Button';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 
 
@@ -9,7 +9,7 @@ import { useState } from 'react';
 const SearchForm = () => {
     const [searchLet, setSearchLet] = useState('');
     const dispatch = useDispatch();
-    const searchString = useSelector(state => state.searchString);
+    //const searchString = useSelector(state => state.searchString);
 
 
     const handleSubmit = (e) => {
