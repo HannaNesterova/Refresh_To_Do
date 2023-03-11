@@ -4,9 +4,6 @@ import shortid from 'shortid';
 
 const defaultState = {
   initialState: initialState,
-  searchString: {
-    String: '',
-  }
 }
 
 const reducer = (state = defaultState.initialState, action) => {
@@ -28,6 +25,8 @@ const reducer = (state = defaultState.initialState, action) => {
         return state;
   }
 };
+
+
 
 
 const store = createStore(

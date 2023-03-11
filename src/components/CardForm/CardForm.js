@@ -14,14 +14,14 @@ const [title, setTitle] = useState('');
   const dispatch = useDispatch();
 
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-    dispatch({ 
-      type: 'ADD_CARD', 
-      newCard: { title, columnId}
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch({
+      type: 'ADD_CARD',
+      payload: { title, columnId }
     });
     setTitle('');
-};
+  };
     return (
 
         <form onSubmit={handleSubmit} className={styles.cardForm}>

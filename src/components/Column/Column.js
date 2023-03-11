@@ -10,7 +10,7 @@ const Column = (props) => {
   //const [searchString, setSearchString] = useState('');
 
   const searchString = useSelector ((state) => state.searchString);
-  const allCards = useSelector((state) => state.cards);
+  //const allCards = useSelector((state) => state.cards);
   const cards = useSelector((state) => state.cards).filter(
     (card) => card.columnId === props.id && card.title.includes(searchString)
   );
