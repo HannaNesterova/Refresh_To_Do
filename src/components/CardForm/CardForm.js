@@ -16,7 +16,10 @@ const [title, setTitle] = useState('');
 
 const handleSubmit = (e) => {
   e.preventDefault();
-    dispatch({ type: 'ADD_CARD', payload: { title, columnId} });
+    dispatch({ 
+      type: 'ADD_CARD', 
+      newCard: { title, columnId}
+    });
     setTitle('');
 };
     return (
