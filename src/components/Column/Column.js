@@ -11,6 +11,7 @@ const Column = (props) => {
 
 
     const cards = useSelector(state => getFilteredCards(state, props.id));
+    console.log('Column render');
 
 
 
