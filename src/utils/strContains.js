@@ -1,7 +1,7 @@
 
 
  const strContains = (searchString, setSearchString ) => {
-     if(searchString.toLowerCase().includes(setSearchString.toLowerCase())) {
+     if(searchString.toLowerCase().includes(setSearchString?.toLowerCase())) {
          return true;
      }
      else{
