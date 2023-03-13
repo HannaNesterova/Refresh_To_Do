@@ -11,7 +11,6 @@ const SearchForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        //dispatch(updateSearch({searchLet}));
         dispatch({ type: 'UPDATE_SEARCHSTRING', payload: searchLet });
         setSearchLet('');
     }
